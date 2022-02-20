@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
 #header h1 a, #header h1 a:hover {
-  color: #000;
+  color: #fff;
   line-height: 1;
   display: inline-block;
 }
@@ -190,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #000;
+  color: #fff;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -216,7 +216,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 25px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #000;
+  color: #15bb62;
 }
 
 /**
