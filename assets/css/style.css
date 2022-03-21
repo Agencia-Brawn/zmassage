@@ -18,7 +18,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/hero-bg.jpg") top right no-repeat;
+  background: #040404 url("../img/bg-fundo.png") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #header h2 span {
   color: #000;
-  border-bottom: 2px solid #18d26e;
+  border-bottom: 2px solid #FCE32F;
   padding-bottom: 6px;
 }
 #header img {
@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
+  background: #89D5ED;
   color: #000;
   line-height: 1;
   margin-right: 8px;
@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 40px;
 }
 #header .social-links a:hover {
-  background: #000;
+  background: #0FC0EC;
   color: #fff;
 }
 @media (max-width: 992px) {
@@ -137,7 +137,8 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   top: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: #06597a;
+  overflow-y: hidden;
 }
 #header.header-top .social-links, #header.header-top h2 {
   display: none;
@@ -209,7 +210,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #18d26e;
+  background-color: #FCE32F;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -219,7 +220,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 25px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #15bb62;
+  color: #1882AC;
 }
 
 /**
@@ -308,7 +309,7 @@ section.section-show {
   padding-bottom: 45px;
 }
 section .container {
-  background: rgba(0, 0, 0, 0.9);
+  background: #065a7a9a;
   padding: 30px;
 }
 @media (max-width: 768px) {
@@ -316,7 +317,8 @@ section .container {
     top: 120px;
   }
   section.section-show {
-    top: 80px;
+    top: 60px;
+    padding-bottom: 0px;
   }
 }
 
@@ -336,7 +338,7 @@ section .container {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #4ceb95;
+  background: #FCE32F;
   margin: 4px 10px;
 }
 .section-title p {
@@ -349,13 +351,25 @@ section .container {
   color: #fff;
 }
 
+@media (max-width: 500px) {
+  .section-title h2::after {
+    display: none;
+  }
+  .section-title h2 {
+    text-align: center;
+  }
+  .section-title p {
+    text-align: center;
+  }
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #18d26e;
+  color: #FCE32F;
 }
 .about-me .content ul {
   list-style: none;
@@ -400,7 +414,7 @@ section .container {
   font-size: 24px;
   background: rgba(255, 255, 255, 0.1);
   padding: 12px;
-  color: #18d26e;
+  color: #FCE32F;
   border-radius: 50px;
   line-height: 0;
 }
@@ -541,12 +555,22 @@ section .container {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #18d26e;
+  background-color: #FCE32F;
 }
 
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); ;
+}
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -611,7 +635,7 @@ section .container {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #18d26e;
+  background: #FCE32F;
   border-radius: 5px;
   transition: all 0.3s ease-out 0s;
   display: flex;
@@ -650,17 +674,17 @@ section .container {
   margin-bottom: 0;
 }
 .services .icon-box:hover {
-  background: #18d26e;
-  border-color: #18d26e;
+  background: #06597a;
+  border-color: #06597a;
 }
 .services .icon-box:hover .icon {
   background: #fff;
 }
 .services .icon-box:hover .icon i {
-  color: #18d26e;
+  color: #000;
 }
 .services .icon-box:hover .icon::before {
-  background: #35e888;
+  background: #FCE32F;
 }
 .services .icon-box:hover h4 a, .services .icon-box:hover p {
   color: #fff;
