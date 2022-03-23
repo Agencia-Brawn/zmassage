@@ -4,6 +4,11 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+$(document).ready(function() {
+  $('#cartao').modal('show');
+});
+
 (function() {
   "use strict";
 
