@@ -396,6 +396,26 @@ section .container {
 }
 
 /*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.agendamento .about-me  button{
+  background-color: #0FC0EC;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.agendamento .about-me  button:hover{
+  background-color: #fff;
+  color: black;
+  transition: 0.5s;
+}
+
+#modalAgendamento .modal-title{
+  color: #000;
+}
+
+
+/*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
 .counts {
