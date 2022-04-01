@@ -49,21 +49,21 @@
         <ul>
           <li><a class="nav-link active" href="/index.html">Home</a></li>
           <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#agendamento" >Agendamento</a></li>
+          <li><a class="nav-link" href="#agendamento">Agendamento</a></li>
           <li><a class="nav-link" href="#services">Services</a></li>
           <li><a class="nav-link" href="#sructure">Sructure</a></li>
           <li><a class="nav-link" href="#portfolio">Depositions</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li><a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#idiomaModal"> <i class="bi bi-translate fs-5 pe-2"></i> Language</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
       <!-- .navbar -->
 
       <div class="social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a target="_blank" href="https://twitter.com/Zmassage1" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/ezequiel-pereira-cooke-b9a3341aa/" class="linkedin"><i
+            class="bi bi-linkedin"></i></a>
       </div>
 
     </div>
@@ -304,13 +304,10 @@
 
       <div class="row align-items-center">
         <div class="col-lg-12 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3> Klicken Sie auf die Schaltfläche unten, um Ihren Termin zu beginnen </h3>
-          <br>
           <div class="text-center">
-            <button type="button" class="btn btn-agendamento" data-bs-toggle="modal" data-bs-target="#modalAgendamento">
-              Terminplanung starten </button>
-          <iframe width="1024" height="768" src="https://zmassage.simplybook.it"></iframe>
-
+            <a href="https://zmassage.simplybook.it/v2/" target="_blank">
+              <button class="btn p-2"> JETZT BERATUNG BUCHEN </button>
+            </a>
           </div>
         </div>
       </div>
@@ -765,6 +762,29 @@
         </div>
         <div class="modal-body text-center">
           <img style="max-height: 500px;" class="img-fluid h-50" src="/assets/img/card.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="idiomaModal" tabindex="-1" aria-labelledby="idiomaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="mx-auto">
+            <h5 class="modal-title" style="color: black;" id="idiomaModalLabel"> Wähle deine Sprache </h5>
+          </div>
+        </div>
+        <div class="modal-body text-center">
+          <button class="btn btn-primary"> Idioma 1 </button>
+          <button class="btn btn-primary"> Idioma 2 </button>
+          <button class="btn btn-primary"> Idioma 3 </button>
+        </div>
+        <div class="modal-footer">
+          <div class="mx-auto">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Zurück zu gehen </button>
+          </div>
         </div>
       </div>
     </div>
