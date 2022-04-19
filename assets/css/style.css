@@ -245,6 +245,14 @@ h1, h2, h3, h4, h5, h6 {
   .mobile-nav-toggle {
     display: block;
   }
+
+  .navbar a, .navbar a:focus {
+    justify-content: center;
+  }
+
+  .navbar li:hover > a:before, .navbar .active:before {
+    width: 100%;
+  }
   
 
   .navbar ul {
@@ -1070,7 +1078,7 @@ section .container {
   .credits {
     text-align: center;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
+    /* background: rgba(0, 0, 0, 0.8); */
   }
 }
 .credits a {
@@ -1080,3 +1088,52 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+
+#imagem-modal {
+  height: auto; 
+  max-width: 500px; 
+  /* background-image: url('/assets/img/card-min.jpg'); */
+  background-repeat: no-repeat;
+  background: rgb(15,91,114);
+  background: linear-gradient(0deg, rgba(15,91,114,1) 35%, rgba(15,91,114,1) 100%);
+  border-radius: 15px;
+}
+
+#icons-modal {
+  border-radius: 100%; 
+  overflow: hidden; 
+  height: 64px;
+  width:64px; 
+  background: white;
+  border: 3px solid #0391c9;
+}
+
+#imagem-modal .btn-agendamento {
+  border: 3px solid #0391c9;
+  background-color: #fff; 
+  border-radius: 30px; 
+  color: #06597a; 
+  font-weight: bold; 
+  font-size: 20px;
+}
+
+#imagem-modal .btn-agendamento:hover {
+  background-color: #06597a; 
+  color: #fff;
+  transition: 0.5s;
+}
+
+#icons-modal:hover {
+  background-color: #06597a;
+  transition: 0.5s;
+}
+
+#icons-modal:hover i{
+  color: #fff;
+  transition: 0.5s;
+}
+
+#icons-modal i{
+  color: #06597a;
+}
+
